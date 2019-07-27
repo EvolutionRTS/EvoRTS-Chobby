@@ -7,12 +7,12 @@
                 "display": "Stable"
             },
             "downloads": {
-                "games" : ["evo:stable", "chobby:test"],
+                "games" : ["evo:stable", "chobby:test", "evo-chobby:test"],
                 "engines" : [ "104.0.1-1208-gb3ccab9 maintenance" ]
             },
             "no_start_script" : true,
             "launch": {
-                "start_args" : ["--menu", "rapid://chobby:test"]
+                "start_args" : ["--menu", "rapid://evo-chobby:test"]
             }
         },
         {
@@ -21,12 +21,12 @@
                 "display": "Test"
             },
             "downloads": {
-                "games" : ["evo:test", "chobby:test"],
+                "games" : ["evo:test", "chobby:test", "evo-chobby:test"],
                 "engines" : [ "104.0.1-1208-gb3ccab9 maintenance" ]
             },
             "no_start_script" : true,
             "launch": {
-                "start_args" : ["--menu", "rapid://chobby:test"]
+                "start_args" : ["--menu", "rapid://evo-chobby:test"]
             }
         },
         {
@@ -40,7 +40,7 @@
             "no_start_script" : true,
             "no_downloads" : true,
             "launch": {
-                "start_args" : ["--menu", "Chobby $VERSION"]
+                "start_args" : ["--menu", "EvoRTS Chobby $VERSION"]
             }
         }
     ]
