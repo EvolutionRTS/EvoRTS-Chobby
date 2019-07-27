@@ -10,3 +10,4 @@ return {
       'rapid://chobby:test',
   },
 }
+
