@@ -57,7 +57,15 @@ local externalFuncAndData = {
 	disableSteam 				= true, -- removes settings related to steam
 	disablePlanetwars 			= true, -- removes settings related to planetwars
 	disableMatchMaking 			= true, -- removes match making
-	disableCommunityWindow 		= true, -- removes Community Window
+	disableCommunityWindow 		= true, -- removes Community Window,
+	randomTrackList = {
+		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/1000 Worlds.ogg",
+		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/A Breath for Imagination.ogg",
+		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/Ad Infinitum.ogg",
+		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/Code Of Existence.ogg",
+		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/Coherence.ogg",
+		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/Emergence.ogg",
+	},
 }
 
 function externalFuncAndData.CheckAvailability()
