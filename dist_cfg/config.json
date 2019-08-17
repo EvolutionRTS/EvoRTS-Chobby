@@ -31,6 +31,21 @@
         },
         {
             "package": {
+                "id": "test-portable",
+                "display": "Portable",
+                "portable": true
+            },
+            "downloads": {
+                "games" : ["evo:test", "chobby:test", "evo-chobby:test"],
+                "engines" : [ "104.0.1-1325-g91bf006 maintenance" ]
+            },
+            "no_start_script" : true,
+            "launch": {
+                "start_args" : ["--menu", "rapid://evo-chobby:test"]
+            }
+        },
+        {
+            "package": {
                 "id": "dev-lobby",
                 "display": "Dev Lobby"
             },
