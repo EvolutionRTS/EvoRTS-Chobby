@@ -107,6 +107,13 @@ local communityLines = {
 		end
 	},
 	{
+		"Upload Spring-Launcher log.",
+		"Upload log",
+		function ()
+			WG.WrapperLoopback.UploadLog()
+		end
+	},
+	{
 		"Open game data folder to find config files and logs.",
 		"Game Data",
 		function ()
