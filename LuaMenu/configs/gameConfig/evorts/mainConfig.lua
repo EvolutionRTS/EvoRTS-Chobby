@@ -65,7 +65,6 @@ local externalFuncAndData = {
 	link_homePage,
 	link_maps,
 	randomTrackList = {
-		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/1000 Worlds.ogg",
 		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/A Breath for Imagination.ogg",
 		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/Ad Infinitum.ogg",
 		"LuaMenu/configs/gameConfig/evorts/lobbyMusic/Code Of Existence.ogg",
