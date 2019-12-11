@@ -9,9 +9,23 @@ function widget:GetInfo()
 		date	= "25 September 2016",
 		license	= "GNU GPL, v2 or later",
 		layer	= 2000,
-		enabled	= true	--	loaded by default?
+		enabled	= false	--	loaded by default?
 	}
 end
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--Lets unfuck these volumes.
+
+musicInitialValue = Spring.GetConfigInt("evo_musicInitialValue", 0)
+if musicInitialValue ~= 1 then
+	Spring.SetConfigInt("snd_volmusic", 20)
+	Spring.SetConfigInt("evo_musicInitialValue", 1)
+end
+
+music_volume = Spring.GetConfigInt("snd_volmusic", 20)
+
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -45,22 +59,21 @@ end
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
-local function StartTrack(trackName, volume)
+local function StartTrack(trackName, snd_volmusic)
 	trackName = trackName or GetRandomTrack(previousTrack)
-	volume = volume or WG.Chobby.Configuration.menuMusicVolume
-	Spring.Echo("Starting Track", trackName, volume)
-	if volume == 0 then
+	Spring.Echo("Starting Track", trackName, snd_volmusic)
+	if snd_volmusic == 0 then
 		return
 	end
 	Spring.StopSoundStream()
-	Spring.PlaySoundStream(trackName, volume)
+	Spring.PlaySoundStream(trackName, snd_volmusic)
 	playingTrack = true
 end
 
-local function LoopTrack(trackName, trackNameIntro, volume)
+local function LoopTrack(trackName, trackNameIntro, snd_volmusic)
 	trackNameIntro = trackNameIntro or trackName
 	loopTrack = trackName
-	StartTrack(trackNameIntro, volume)
+	StartTrack(trackNameIntro, snd_volmusic)
 end
 
 local function StopTrack()
@@ -72,16 +85,16 @@ end
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
-local function SetTrackVolume(volume)
-	if volume == 0 then
+local function SetTrackVolume(snd_volmusic)
+	if snd_volmusic == 0 then
 		StopTrack()
 		return
 	end
 	if playingTrack then
-		Spring.SetSoundStreamVolume(volume)
+		Spring.SetSoundStreamVolume(snd_volmusic)
 		return
 	end
-	StartTrack(GetRandomTrack(), volume)
+	StartTrack(GetRandomTrack(), snd_volmusic)
 	previousTrack = nil
 end
 
@@ -93,7 +106,7 @@ local ingame = false
 
 function widget:Update()
 
-	if ingame or (WG.Chobby.Configuration.menuMusicVolume == 0 )then
+	if ingame or (snd_volmusic == 0 )then
 		return
 	end
 
