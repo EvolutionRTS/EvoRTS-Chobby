@@ -95,6 +95,7 @@ local function SetTrackVolume(snd_volmusic)
 		return
 	end
 	StartTrack(GetRandomTrack(), snd_volmusic)
+	Spring.SetSoundStreamVolume(snd_volmusic)
 	previousTrack = nil
 end
 
