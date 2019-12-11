@@ -46,8 +46,9 @@ end
 --------------------------------------------------------------------------------
 
 local function StartTrack(trackName, snd_volmusic)
+	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
 	trackName = trackName or GetRandomTrack(previousTrack)
-	Spring.Echo("Starting Track", trackName, snd_volmusic)
+	Spring.Echo("[Lobby Music Player] Starting Track", trackName, snd_volmusic)
 	if snd_volmusic == 0 then
 		return
 	end
@@ -153,6 +154,7 @@ function widget:Initialize()
 	if musicInitialValue ~= 1 then
 		Spring.SetConfigInt("snd_volmusic", 20)
 		Spring.SetConfigInt("evo_musicInitialValue", 1)
+		Spring.Echo ("[Lobby Music Player] Setting initial music volume"
 	end
 
 	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
