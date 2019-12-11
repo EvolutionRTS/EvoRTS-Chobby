@@ -154,7 +154,7 @@ function widget:Initialize()
 	if musicInitialValue ~= 1 then
 		Spring.SetConfigInt("snd_volmusic", 20)
 		Spring.SetConfigInt("evo_musicInitialValue", 1)
-		Spring.Echo ("[Lobby Music Player] Setting initial music volume"
+		Spring.Echo("[Lobby Music Player] Setting initial music volume")
 	end
 
 	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
