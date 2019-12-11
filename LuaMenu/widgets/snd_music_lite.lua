@@ -67,6 +67,7 @@ local function StartTrack(trackName, snd_volmusic)
 	end
 	Spring.StopSoundStream()
 	Spring.PlaySoundStream(trackName, snd_volmusic)
+	Spring.SetSoundStreamVolume(snd_volmusic)
 	playingTrack = true
 end
 
