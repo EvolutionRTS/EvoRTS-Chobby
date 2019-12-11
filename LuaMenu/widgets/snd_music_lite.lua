@@ -24,7 +24,7 @@ if musicInitialValue ~= 1 then
 	Spring.SetConfigInt("evo_musicInitialValue", 1)
 end
 
-music_volume = Spring.GetConfigInt("snd_volmusic", 20)
+snd_volmusic = Spring.GetConfigInt("snd_volmusic", 20)
 
 
 --------------------------------------------------------------------------------
@@ -178,7 +178,8 @@ function widget:Initialize()
 
 	local function onConfigurationChange(listener, key, value)
 		if key == "menuMusicVolume" then
-			SetTrackVolume(value)
+			snd_volmusic = Spring.GetConfigInt("snd_volmusic", 20)
+			SetTrackVolume(snd_volmusic)
 		end
 	end
 	Configuration:AddListener("OnConfigurationChange", onConfigurationChange)
