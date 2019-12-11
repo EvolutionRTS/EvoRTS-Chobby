@@ -9,7 +9,7 @@ function widget:GetInfo()
 		date	= "25 September 2016",
 		license	= "GNU GPL, v2 or later",
 		layer	= 2000,
-		enabled	= false	--	loaded by default?
+		enabled	= true	--	loaded by default?
 	}
 end
 
@@ -94,6 +94,7 @@ local function SetTrackVolume(snd_volmusic)
 		Spring.SetSoundStreamVolume(snd_volmusic)
 		return
 	end
+	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
 	StartTrack(GetRandomTrack(), snd_volmusic)
 	Spring.SetSoundStreamVolume(snd_volmusic)
 	previousTrack = nil
