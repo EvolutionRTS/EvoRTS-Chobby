@@ -105,7 +105,7 @@ local firstActivation = true
 local ingame = false
 
 function widget:Update()
-	snd_volmusic = Spring.GetConfigInt("snd_volmusic", 20)
+	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
 
 	if ingame or (snd_volmusic == 0 )then
 		return
@@ -179,7 +179,7 @@ function widget:Initialize()
 
 	local function onConfigurationChange(listener, key, value)
 		if key == "menuMusicVolume" then
-			snd_volmusic = Spring.GetConfigInt("snd_volmusic", 20)
+			snd_volmusic = Spring.GetConfigInt("snd_volmusic")
 			SetTrackVolume(snd_volmusic)
 		end
 	end
