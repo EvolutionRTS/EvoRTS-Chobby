@@ -46,7 +46,6 @@ end
 --------------------------------------------------------------------------------
 
 local function StartTrack(trackName, snd_volmusic)
-	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
 	trackName = trackName or GetRandomTrack(previousTrack)
 	Spring.Echo("Starting Track", trackName, snd_volmusic)
 	if snd_volmusic == 0 then
@@ -82,7 +81,6 @@ local function SetTrackVolume(snd_volmusic)
 		Spring.SetSoundStreamVolume(snd_volmusic)
 		return
 	end
-	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
 	StartTrack(GetRandomTrack(), snd_volmusic)
 	previousTrack = nil
 end
