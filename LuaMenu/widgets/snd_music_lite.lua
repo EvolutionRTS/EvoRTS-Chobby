@@ -105,6 +105,7 @@ local firstActivation = true
 local ingame = false
 
 function widget:Update()
+	snd_volmusic = Spring.GetConfigInt("snd_volmusic", 20)
 
 	if ingame or (snd_volmusic == 0 )then
 		return
