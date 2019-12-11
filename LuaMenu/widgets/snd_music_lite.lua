@@ -13,20 +13,6 @@ function widget:GetInfo()
 	}
 end
 
-
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
---Lets unfuck these volumes.
-
-musicInitialValue = Spring.GetConfigInt("evo_musicInitialValue", 0)
-if musicInitialValue ~= 1 then
-	Spring.SetConfigInt("snd_volmusic", 20)
-	Spring.SetConfigInt("evo_musicInitialValue", 1)
-end
-
-snd_volmusic = Spring.GetConfigInt("snd_volmusic", 20)
-
-
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
@@ -60,6 +46,7 @@ end
 --------------------------------------------------------------------------------
 
 local function StartTrack(trackName, snd_volmusic)
+	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
 	trackName = trackName or GetRandomTrack(previousTrack)
 	Spring.Echo("Starting Track", trackName, snd_volmusic)
 	if snd_volmusic == 0 then
@@ -97,7 +84,6 @@ local function SetTrackVolume(snd_volmusic)
 	end
 	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
 	StartTrack(GetRandomTrack(), snd_volmusic)
-	Spring.SetSoundStreamVolume(snd_volmusic)
 	previousTrack = nil
 end
 
@@ -161,6 +147,19 @@ function widget:ActivateMenu()
 end
 
 function widget:Initialize()
+	--------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------
+	--Lets unfuck these volumes.
+
+	musicInitialValue = Spring.GetConfigInt("evo_musicInitialValue", 0)
+	if musicInitialValue ~= 1 then
+		Spring.SetConfigInt("snd_volmusic", 20)
+		Spring.SetConfigInt("evo_musicInitialValue", 1)
+	end
+
+	snd_volmusic = Spring.GetConfigInt("snd_volmusic")
+	--------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------
 
 	-- load custom game dependent music
 	randomTrackList = WG.Chobby.Configuration.gameConfig.randomTrackList
