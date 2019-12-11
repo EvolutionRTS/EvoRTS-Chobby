@@ -725,7 +725,7 @@ local function GetLobbyTabControls()
 		value  = snd_volmusic or 20,
 		min    = 0,
 		max    = 50,
-		step   = 5,
+		step   = 1,
 		OnChange = {
 			function(obj, value)
 				if freezeSettings then
