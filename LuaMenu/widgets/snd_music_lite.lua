@@ -74,6 +74,7 @@ end
 --------------------------------------------------------------------------------
 
 local function SetTrackVolume(snd_volmusic)
+	snd_volmusic = Spring.GetConfigInt("snd_volmusic", 10) or 10
 	if snd_volmusic == 0 then
 		StopTrack()
 		return
