@@ -53,8 +53,12 @@ local function StartTrack(trackName, snd_volmusic)
 		return
 	end
 	Spring.StopSoundStream()
-	Spring.PlaySoundStream(trackName, snd_volmusic)
 	Spring.SetSoundStreamVolume(snd_volmusic)
+	Spring.Echo("Music Volume is set to " .. snd_volmusic)
+	Spring.PlaySoundStream(trackName, snd_volmusic)
+	Spring.Echo("playing " ..trackName .. " at volume level " .. snd_volmusic)
+	Spring.SetSoundStreamVolume(snd_volmusic)
+	Spring.Echo("Music Volume is set to " .. snd_volmusic)
 	playingTrack = true
 end
 
