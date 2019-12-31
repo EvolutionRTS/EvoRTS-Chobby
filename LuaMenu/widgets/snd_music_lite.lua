@@ -54,7 +54,7 @@ local function StartTrack(trackName, snd_volmusic)
 	end
 	Spring.StopSoundStream()
 	Spring.PlaySoundStream(trackName, snd_volmusic)
-	SetTrackVolume(snd_volmusic)
+	Spring.SetSoundStreamVolume(snd_volmusic)
 	playingTrack = true
 end
 
@@ -79,7 +79,7 @@ local function SetTrackVolume(snd_volmusic)
 		return
 	end
 	if playingTrack then
-		SetTrackVolume(snd_volmusic)
+		Spring.SetSoundStreamVolume(snd_volmusic)
 		return
 	end
 	StartTrack(GetRandomTrack(), snd_volmusic)
@@ -135,7 +135,6 @@ function widget:ActivateMenu()
 	ingame = false
 	if firstActivation then
 		StartTrack(openTrack)
-		SetTrackVolume(snd_volmusic)
 		previousTrack = openTrack
 		firstActivation = false
 		return
@@ -143,7 +142,6 @@ function widget:ActivateMenu()
 	-- start playing music again
 	local newTrack = GetRandomTrack(previousTrack)
 	StartTrack(newTrack)
-	SetTrackVolume(snd_volmusic)
 	previousTrack = newTrack
 end
 
@@ -160,7 +158,6 @@ function widget:Initialize()
 	end
 
 	snd_volmusic = Spring.GetConfigInt("snd_volmusic", 10)
-	SetTrackVolume(snd_volmusic)
 	--------------------------------------------------------------------------------
 	--------------------------------------------------------------------------------
 
@@ -185,6 +182,7 @@ function widget:Initialize()
 	local function onConfigurationChange(listener, key, value)
 		if key == "menuMusicVolume" then
 			snd_volmusic = Spring.GetConfigInt("snd_volmusic", 10)
+			Spring.SetSoundStreamVolume(snd_volmusic)
 			SetTrackVolume(snd_volmusic)
 		end
 	end
@@ -198,6 +196,7 @@ function widget:Initialize()
 	WG.LibLobby.lobby:AddListener("OnBattleAboutToStart", OnBattleAboutToStart)
 
 	WG.MusicHandler = MusicHandler
+	Spring.SetSoundStreamVolume(snd_volmusic)
 end
 
 --------------------------------------------------------------------------------
