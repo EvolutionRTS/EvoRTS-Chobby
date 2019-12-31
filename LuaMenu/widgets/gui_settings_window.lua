@@ -722,9 +722,9 @@ local function GetLobbyTabControls()
 		y = offset,
 		width  = COMBO_WIDTH,
 		height = 30,
-		value  = snd_volmusic or 20,
+		value  = snd_volmusic or 10,
 		min    = 0,
-		max    = 50,
+		max    = 25,
 		step   = 1,
 		OnChange = {
 			function(obj, value)
