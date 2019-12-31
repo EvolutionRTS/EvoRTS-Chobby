@@ -62,6 +62,7 @@ local function LoopTrack(trackName, trackNameIntro, snd_volmusic)
 	trackNameIntro = trackNameIntro or trackName
 	loopTrack = trackName
 	StartTrack(trackNameIntro, snd_volmusic)
+	Spring.SetSoundStreamVolume(snd_volmusic)
 end
 
 local function StopTrack()
@@ -111,6 +112,7 @@ function widget:Update()
 	if (playedTime >= totalTime) then
 		local newTrack = loopTrack or GetRandomTrack(previousTrack)
 		StartTrack(newTrack)
+		Spring.SetSoundStreamVolume(snd_volmusic)
 		previousTrack = newTrack
 	end
 end
@@ -136,6 +138,7 @@ function widget:ActivateMenu()
 	ingame = false
 	if firstActivation then
 		StartTrack(openTrack)
+		Spring.SetSoundStreamVolume(snd_volmusic)
 		previousTrack = openTrack
 		firstActivation = false
 		return
@@ -143,6 +146,7 @@ function widget:ActivateMenu()
 	-- start playing music again
 	local newTrack = GetRandomTrack(previousTrack)
 	StartTrack(newTrack)
+	Spring.SetSoundStreamVolume(snd_volmusic)
 	previousTrack = newTrack
 end
 
