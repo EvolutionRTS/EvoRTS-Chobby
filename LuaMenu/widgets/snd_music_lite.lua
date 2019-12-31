@@ -53,12 +53,8 @@ local function StartTrack(trackName, snd_volmusic)
 		return
 	end
 	Spring.StopSoundStream()
-	Spring.SetSoundStreamVolume(snd_volmusic)
-	Spring.Echo("Music Volume is set to " .. snd_volmusic)
 	Spring.PlaySoundStream(trackName, snd_volmusic)
-	Spring.Echo("playing " ..trackName .. " at volume level " .. snd_volmusic)
 	Spring.SetSoundStreamVolume(snd_volmusic)
-	Spring.Echo("Music Volume is set to " .. snd_volmusic)
 	playingTrack = true
 end
 
@@ -98,6 +94,7 @@ local ingame = false
 
 function widget:Update()
 	snd_volmusic = Spring.GetConfigInt("snd_volmusic", 10) or 10
+	Spring.SetSoundStreamVolume(snd_volmusic)
 
 	if ingame or (snd_volmusic == 0 )then
 		return
