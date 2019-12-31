@@ -116,7 +116,7 @@ local settingsConfig = {
 					{
 						name = "Refractive",
 						apply = {
-							Water = 2,
+							Water = 3,
 						}
 					},
 					{
@@ -321,7 +321,7 @@ local settingsConfig = {
 						apply = {
 							GroundScarAlphaFade = 0,
 							GroundDecals = 0,
-							GroundDetail = 75,
+							GroundDetail = 64,
 						}
 					},
 					{
@@ -329,7 +329,7 @@ local settingsConfig = {
 						apply = {
 							GroundScarAlphaFade = 0,
 							GroundDecals = 1,
-							GroundDetail = 100,
+							GroundDetail = 90,
 						}
 					},
 					{
@@ -413,8 +413,8 @@ local settingsConfig = {
 					{
 						name = "Off",
 						apply = {
-							DynamicSky = 1,
-							AdvSky = 1,
+							DynamicSky = 0,
+							AdvSky = 0,
 						}
 					},
 				},
@@ -450,24 +450,21 @@ local settingsConfig = {
 					{
 						name = "Off",
 						apply = {
-							FSAALevel = 2,
-							FSAA = 0,
+							MSAALevel = 0,
 							SmoothLines = 0,
 						}
 					},
 					{
 						name = "Low",
 						apply = {
-							FSAALevel = 2,
-							FSAA = 1,
+							MSAALevel = 4,
 							SmoothLines = 1,
 						}
 					},
 					{
 						name = "High",
 						apply = {
-							FSAALevel = 8,
-							FSAA = 1,
+							MSAALevel = 8,
 							SmoothLines = 3,
 						}
 					},
@@ -481,7 +478,7 @@ local settingsConfig = {
 			{
 				name = "Default",
 				settings = {
-					IconDistance = 151,
+					IconDistance = 300,
 					MouseZoomSpeed = 25,
 					InvertZoom = "On",
 					MiddlePanSpeed = 10,
@@ -583,9 +580,9 @@ local settingsDefault = {
 	AntiAliasing = "Low",
 	ShaderDetail = "High",
 	FancySky = "Off",
-	IconDistance = 151,
+	IconDistance = 300,
 	MouseZoomSpeed = 25,
-	InvertZoom = "Off",
+	InvertZoom = "on",
 	MiddlePanSpeed = 10,
 	CameraPanSpeed = 10,
 }
