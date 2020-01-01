@@ -21,7 +21,7 @@ end
 
 musicInitialValue = Spring.GetConfigInt("evo_musicInitialValue", 0)
 if musicInitialValue ~= 1 then
-	Spring.SetConfigInt("snd_volmusic", 20)
+	Spring.SetConfigInt("snd_volmusic", 10)
 	Spring.SetConfigInt("evo_musicInitialValue", 1)
 end
 
