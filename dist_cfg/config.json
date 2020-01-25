@@ -8,7 +8,7 @@
             },
             "downloads": {
                 "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"],
-                "engines" : [ "104.0.1-1455-g39f8fbd maintenance" ]
+                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
             },
             "no_start_script" : true,
             "launch": {
@@ -22,7 +22,7 @@
             },
             "downloads": {
                 "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"],
-				"engines" : [ "104.0.1-1455-g39f8fbd maintenance" ]
+                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
             },
             "no_start_script" : true,
             "launch": {
@@ -36,12 +36,12 @@
                 "portable": true
             },
             "downloads": {
-                "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"],
-				"engines" : [ "104.0.1-1455-g39f8fbd maintenance" ]
+                "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"]
             },
             "no_start_script" : true,
             "launch": {
-                "start_args" : ["--menu", "rapid://evo-chobby:test"]
+                "start_args" : ["--menu", "rapid://evo-chobby:test"],
+                "engine": "104.0.1-1344-g07bdbaf maintenance"
             }
         },
         {
@@ -50,7 +50,7 @@
                 "display": "Dev Lobby"
             },
             "downloads": {
-                "engines" : [ "104.0.1-1455-g39f8fbd maintenance" ]
+                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
             },
             "no_start_script" : true,
             "no_downloads" : true,
