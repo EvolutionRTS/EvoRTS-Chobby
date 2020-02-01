@@ -8,7 +8,7 @@ EvolutionRTS mutator for Chobby
 - [Windows](https://spring-launcher.ams3.digitaloceanspaces.com/EvolutionRTS/EvoRTS-Chobby/Evolution%20RTS.exe)
 - [Windows-Portable](https://spring-launcher.ams3.digitaloceanspaces.com/EvolutionRTS/EvoRTS-Chobby/Evolution%20RTS-portable.exe)
 
-# Development setp
+# Development setup
 
 1. Download using one of the links above and start the application.
 2. Start the application once using the "Stable" or "Test" version and launch the lobby. This will download the engine and other dependencies.
