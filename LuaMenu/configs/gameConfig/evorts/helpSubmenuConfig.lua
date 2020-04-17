@@ -61,7 +61,7 @@ local communityLines = {
 		"Community forums.",
 		"Forums",
 		function ()
-			WG.BrowserHandler.OpenUrl("https://springrts.com/phpbb/viewforum.php?f=51")
+			WG.BrowserHandler.OpenUrl("https://www.evolutionrts.info/forums/")
 		end
 	},
 	{
@@ -75,21 +75,7 @@ local communityLines = {
 		"Discord chat server.",
 		"Discord",
 		function ()
-			WG.BrowserHandler.OpenUrl("http://discord.me/evolutionrts")
-		end
-	},
-	{
-		"Contributors and developers.",
-		"Credits",
-		function ()
-			WG.BrowserHandler.OpenUrl("https://zero-k.info/mediawiki/index.php?title=Credits")
-		end
-	},
-	{
-		"Browse and download maps.",
-		"Maps",
-		function ()
-			WG.BrowserHandler.OpenUrl("https://zero-k.info/Maps")
+			WG.BrowserHandler.OpenUrl("https://discord.gg/v2hXV7e")
 		end
 	},
 	{

@@ -23,8 +23,8 @@ local background = {
 	backgroundFocus = backgroundConfig.backgroundFocus,
 }
 
-local minimapOverridePath  = LUA_DIRNAME .. "configs/gameConfig/zk/minimapOverride/"
-local minimapThumbnailPath = LUA_DIRNAME .. "configs/gameConfig/zk/minimapThumbnail/"
+local minimapOverridePath  = LUA_DIRNAME .. "configs/gameConfig/evorts/minimapOverride/"
+local minimapThumbnailPath = LUA_DIRNAME .. "configs/gameConfig/evorts/minimapThumbnail/"
 
 ---------------------------------------------------------------------------------
 -- Getters
@@ -50,7 +50,7 @@ local externalFuncAndData = {
 	headingLarge           = headingLarge,
 	headingSmall           = headingSmall,
 	taskbarTitle           = "Evolution RTS",
-	taskbarTitleShort      = "Evo RTS",
+	taskbarTitleShort      = "EvoRTS",
 	taskbarIcon            = taskbarIcon,
 	background             = background,
 	minimapOverridePath    = minimapOverridePath,
