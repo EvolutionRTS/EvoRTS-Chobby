@@ -7,7 +7,7 @@
                 "display": "Stable"
             },
             "downloads": {
-                "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"],
+                "games" : ["chobby:test", "evo-chobby:test"],
                 "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
             },
             "no_start_script" : true,
@@ -21,7 +21,7 @@
                 "display": "Test"
             },
             "downloads": {
-                "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"],
+                "games" : ["chobby:test", "evo-chobby:test"],
                 "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
             },
             "no_start_script" : true,
@@ -36,7 +36,7 @@
                 "portable": true
             },
             "downloads": {
-                "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"]
+                "games" : ["chobby:test", "evo-chobby:test"]
             },
             "no_start_script" : true,
             "launch": {
