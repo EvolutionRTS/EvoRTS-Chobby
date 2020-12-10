@@ -1,4 +1,4 @@
 return {
-	map = "Eye_Of_Horus_v2",
-	enemyAI = "DAI",
+	map = "Altored Divide Bar Remake 1.3",
+	enemyAI = "ScavengersAI",
 }
