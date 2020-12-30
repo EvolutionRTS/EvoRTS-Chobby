@@ -4,9 +4,9 @@ EvolutionRTS mutator for Chobby
 
 # Download links
 
-- [Linux](https://spring-launcher.ams3.digitaloceanspaces.com/EvolutionRTS/EvoRTS-Chobby/Evolution%20RTS.AppImage)
-- [Windows](https://spring-launcher.ams3.digitaloceanspaces.com/EvolutionRTS/EvoRTS-Chobby/Evolution%20RTS.exe)
-- [Windows-Portable](https://spring-launcher.ams3.digitaloceanspaces.com/EvolutionRTS/EvoRTS-Chobby/Evolution%20RTS-portable.exe)
+- [Linux](https://content.spring-launcher.com/EvolutionRTS/EvoRTS-Chobby/Evolution%20RTS.AppImage)
+- [Windows](https://content.spring-launcher.com/EvolutionRTS/EvoRTS-Chobby/Evolution%20RTS.exe)
+- [Windows-Portable](https://content.spring-launcher.com/EvolutionRTS/EvoRTS-Chobby/Evolution%20RTS-portable.exe)
 
 # Development setup
 
