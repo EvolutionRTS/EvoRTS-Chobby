@@ -3,59 +3,116 @@
     "setups" : [
         {
             "package": {
-                "id": "stable",
-                "display": "Stable"
+                "id": "stable-linux",
+                "display": "Stable",
+                "platform": "linux"
             },
             "downloads": {
-                "games" : ["chobby:test", "evo-chobby:test"],
-                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
-            },
-            "no_start_script" : true,
-            "launch": {
-                "start_args" : ["--menu", "rapid://evo-chobby:test"]
-            }
-        },
-        {
-            "package": {
-                "id": "test",
-                "display": "Test"
-            },
-            "downloads": {
-                "games" : ["chobby:test", "evo-chobby:test"],
-                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
-            },
-            "no_start_script" : true,
-            "launch": {
-                "start_args" : ["--menu", "rapid://evo-chobby:test"]
-            }
-        },
-        {
-            "package": {
-                "id": "test-portable",
-                "display": "Portable",
-                "portable": true
-            },
-            "downloads": {
-                "games" : ["chobby:test", "evo-chobby:test"]
+                "games" : ["spring-features:stable", "evo:stable",  "evo:test", "chobby:test", "evo-chobby:test"],
+
+                "resources": {
+                    "url": "https://content.spring-launcher.com/engines/spring_{maintenance}104.0.1-1553-gd3c0012_minimal-portable-linux64-static.7z",
+                    "destination": "engine/104.0.1-1553-gd3c0012 maintenance",
+                    "extract": true
+                }
             },
             "no_start_script" : true,
             "launch": {
                 "start_args" : ["--menu", "rapid://evo-chobby:test"],
-                "engine": "104.0.1-1344-g07bdbaf maintenance"
+                "engine": "104.0.1-1553-gd3c0012 maintenance"
             }
         },
         {
             "package": {
-                "id": "dev-lobby",
-                "display": "Dev Lobby"
+                "id": "stable-win",
+                "display": "Stable",
+                "platform": "win32"
             },
             "downloads": {
-                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
+                "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"],
+
+                "resources": {
+                    "url": "https://content.spring-launcher.com/engines/spring_%7Bmaintenance%7D104.0.1-1553-gd3c0012_win64-minimal-portable.7z",
+                    "destination": "engine/104.0.1-1553-gd3c0012 maintenance",
+                    "extract": true
+                }
+            },
+            "no_start_script" : true,
+            "launch": {
+                "start_args" : ["--menu", "rapid://evo-chobby:test"],
+                "engine": "104.0.1-1553-gd3c0012 maintenance"
+            }
+        },
+        {
+            "package": {
+                "id": "portable-linux",
+                "display": "Portable",
+                "platform": "linux"
+            },
+            "no_start_script" : true,
+            "no_downloads": true,
+            "auto_start": true,
+            "launch": {
+                "start_args" : ["--menu", "rapid://evo-chobby:test"],
+                "engine": "104.0.1-1553-gd3c0012 maintenance"
+            }
+        },
+        {
+            "package": {
+                "id": "portable-win",
+                "display": "Portable",
+                "portable": true
+            },
+            "no_start_script" : true,
+            "no_downloads": true,
+            "auto_start": true,
+            "launch": {
+                "start_args" : ["--menu", "rapid://evo-chobby:test"],
+                "engine": "104.0.1-1553-gd3c0012 maintenance"
+            }
+        },
+        {
+            "package": {
+                "id": "dev-lobby-linux",
+                "display": "Dev Lobby",
+                "platform": "linux"
+            },
+            "downloads": {
+                "resources": [
+                    {
+                        "url": "https://content.spring-launcher.com/engines/spring_{maintenance}104.0.1-1553-gd3c0012_minimal-portable-linux64-static.7z",
+                        "destination": "engine/104.0.1-1553-gd3c0012 maintenance",
+                        "extract": true
+                    }
+                ]
             },
             "no_start_script" : true,
             "no_downloads" : true,
             "launch": {
-                "start_args" : ["--menu", "EvoRTS Chobby $VERSION"]
+                "start_args" : ["--menu", "EvoRTS Chobby $VERSION"],
+                "engine" : "104.0.1-1553-gd3c0012 maintenance"
+            }
+        },
+        {
+            "package": {
+                "id": "dev-lobby-windows",
+                "display": "Dev Lobby",
+                "platform": "win32"
+            },
+            "downloads": {
+                "resources": [
+                    {
+                        "url": "https://content.spring-launcher.com/engines/spring_%7Bmaintenance%7D104.0.1-1553-gd3c0012_win64-minimal-portable.7z",
+                        "destination": "engine/104.0.1-1553-gd3c0012 maintenance",
+                        "extract": true
+                    }
+                ]
+            },
+            "no_start_script" : true,
+            "no_downloads" : true,
+            "launch": {
+                "start_args" : ["--menu", "EvoRTS Chobby $VERSION"],
+                "engine" : "104.0.1-1553-gd3c0012 maintenance"
             }
         }
     ]
