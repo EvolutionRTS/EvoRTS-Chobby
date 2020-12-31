@@ -61,7 +61,8 @@ local externalFuncAndData = {
 	disableSteam 				= true, -- removes settings related to steam
 	disablePlanetwars 			= true, -- removes settings related to planetwars
 	disableMatchMaking 			= true, -- removes match making
-	disableCommunityWindow 		= true, -- removes Community Window,
+	disableCommunityWindow 		= true, -- removes Community Window
+	disableZKMapFiltering       = true, -- removes ZK "featured" map filter
 	link_homePage,
 	link_maps,
 	randomTrackList = {

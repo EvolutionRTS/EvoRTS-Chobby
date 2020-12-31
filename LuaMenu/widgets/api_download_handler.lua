@@ -277,8 +277,6 @@ function externalFunctions.RemoveRemovedDownload(name, fileType)
 end
 
 function externalFunctions.MaybeDownloadArchive(name, archiveType, priority)
-	Spring.Echo(name, archiveType, priority)
-	Spring.Echo(debug.traceback())
 	if not VFS.HasArchive(name) then
 		externalFunctions.QueueDownload(name, archiveType, priority)
 	end
