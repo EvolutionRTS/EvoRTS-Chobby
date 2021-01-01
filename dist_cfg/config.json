@@ -12,14 +12,14 @@
 
                 "resources": {
                     "url": "https://content.spring-launcher.com/engines/spring_{maintenance}104.0.1-1553-gd3c0012_minimal-portable-linux64-static.7z",
-                    "destination": "engine/104.0.1-1553-gd3c0012 maintenance",
+                    "destination": "engine/105.0",
                     "extract": true
                 }
             },
             "no_start_script" : true,
             "launch": {
                 "start_args" : ["--menu", "rapid://evo-chobby:test"],
-                "engine": "104.0.1-1553-gd3c0012 maintenance"
+                "engine": "105.0"
             }
         },
         {
@@ -33,14 +33,14 @@
 
                 "resources": {
                     "url": "https://content.spring-launcher.com/engines/spring_%7Bmaintenance%7D104.0.1-1553-gd3c0012_win64-minimal-portable.7z",
-                    "destination": "engine/104.0.1-1553-gd3c0012 maintenance",
+                    "destination": "engine/105.0",
                     "extract": true
                 }
             },
             "no_start_script" : true,
             "launch": {
                 "start_args" : ["--menu", "rapid://evo-chobby:test"],
-                "engine": "104.0.1-1553-gd3c0012 maintenance"
+                "engine": "105.0"
             }
         },
         {
@@ -54,7 +54,7 @@
             "auto_start": true,
             "launch": {
                 "start_args" : ["--menu", "rapid://evo-chobby:test"],
-                "engine": "104.0.1-1553-gd3c0012 maintenance"
+                "engine": "105.0"
             }
         },
         {
@@ -68,7 +68,7 @@
             "auto_start": true,
             "launch": {
                 "start_args" : ["--menu", "rapid://evo-chobby:test"],
-                "engine": "104.0.1-1553-gd3c0012 maintenance"
+                "engine": "105.0"
             }
         },
         {
@@ -81,7 +81,7 @@
                 "resources": [
                     {
                         "url": "https://content.spring-launcher.com/engines/spring_{maintenance}104.0.1-1553-gd3c0012_minimal-portable-linux64-static.7z",
-                        "destination": "engine/104.0.1-1553-gd3c0012 maintenance",
+                        "destination": "engine/105.0",
                         "extract": true
                     }
                 ]
@@ -90,7 +90,7 @@
             "no_downloads" : true,
             "launch": {
                 "start_args" : ["--menu", "EvoRTS Chobby $VERSION"],
-                "engine" : "104.0.1-1553-gd3c0012 maintenance"
+                "engine" : "105.0"
             }
         },
         {
@@ -103,7 +103,7 @@
                 "resources": [
                     {
                         "url": "https://content.spring-launcher.com/engines/spring_%7Bmaintenance%7D104.0.1-1553-gd3c0012_win64-minimal-portable.7z",
-                        "destination": "engine/104.0.1-1553-gd3c0012 maintenance",
+                        "destination": "engine/105.0",
                         "extract": true
                     }
                 ]
@@ -112,7 +112,7 @@
             "no_downloads" : true,
             "launch": {
                 "start_args" : ["--menu", "EvoRTS Chobby $VERSION"],
-                "engine" : "104.0.1-1553-gd3c0012 maintenance"
+                "engine" : "105.0"
             }
         }
     ]
