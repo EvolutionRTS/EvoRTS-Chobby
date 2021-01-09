@@ -11,7 +11,7 @@
                 "games" : ["spring-features:stable", "evo:stable",  "evo:test", "chobby:test", "evo-chobby:test"],
 
                 "resources": {
-                    "url": "https://content.spring-launcher.com/engines/spring_{maintenance}104.0.1-1553-gd3c0012_minimal-portable-linux64-static.7z",
+                    "url": "https://content.spring-launcher.com/engines/spring_105.0_minimal-portable-linux64-static.7z",
                     "destination": "engine/105.0",
                     "extract": true
                 }
@@ -32,7 +32,7 @@
                 "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"],
 
                 "resources": {
-                    "url": "https://content.spring-launcher.com/engines/spring_%7Bmaintenance%7D104.0.1-1553-gd3c0012_win64-minimal-portable.7z",
+                    "url": "https://content.spring-launcher.com/engines/spring_105.0_win64-minimal-portable.7z",
                     "destination": "engine/105.0",
                     "extract": true
                 }
@@ -80,7 +80,7 @@
             "downloads": {
                 "resources": [
                     {
-                        "url": "https://content.spring-launcher.com/engines/spring_{maintenance}104.0.1-1553-gd3c0012_minimal-portable-linux64-static.7z",
+                        "url": "https://content.spring-launcher.com/engines/spring_105.0_minimal-portable-linux64-static.7z",
                         "destination": "engine/105.0",
                         "extract": true
                     }
@@ -102,7 +102,7 @@
             "downloads": {
                 "resources": [
                     {
-                        "url": "https://content.spring-launcher.com/engines/spring_%7Bmaintenance%7D104.0.1-1553-gd3c0012_win64-minimal-portable.7z",
+                        "url": "https://content.spring-launcher.com/engines/spring_105.0_win64-minimal-portable.7z",
                         "destination": "engine/105.0",
                         "extract": true
                     }
