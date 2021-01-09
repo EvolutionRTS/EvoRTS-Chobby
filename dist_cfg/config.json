@@ -10,11 +10,13 @@
             "downloads": {
                 "games" : ["spring-features:stable", "evo:stable",  "evo:test", "chobby:test", "evo-chobby:test"],
 
-                "resources": {
-                    "url": "https://content.spring-launcher.com/engines/spring_105.0_minimal-portable-linux64-static.7z",
-                    "destination": "engine/105.0",
-                    "extract": true
-                }
+                "resources": [
+                    {
+                        "url": "https://content.spring-launcher.com/engines/spring_105.0_minimal-portable-linux64-static.7z",
+                        "destination": "engine/105.0",
+                        "extract": true
+                    }
+                ]
             },
             "no_start_script" : true,
             "launch": {
@@ -31,11 +33,13 @@
             "downloads": {
                 "games" : ["spring-features:stable", "evo:stable", "evo:test", "chobby:test", "evo-chobby:test"],
 
-                "resources": {
-                    "url": "https://content.spring-launcher.com/engines/spring_105.0_win64-minimal-portable.7z",
-                    "destination": "engine/105.0",
-                    "extract": true
-                }
+                "resources": [
+                    {
+                        "url": "https://content.spring-launcher.com/engines/spring_105.0_win64-minimal-portable.7z",
+                        "destination": "engine/105.0",
+                        "extract": true
+                    }
+                ]
             },
             "no_start_script" : true,
             "launch": {
